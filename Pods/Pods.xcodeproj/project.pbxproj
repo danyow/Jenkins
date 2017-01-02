@@ -13,12 +13,12 @@
 
 /* Begin PBXFileReference section */
 		0BF4EEFB5690121A9712D962D14C67A1 /* Pods-Jenkins-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Jenkins-frameworks.sh"; sourceTree = "<group>"; };
-		14CE82CB6CC3F15847D5C5CFD56DA36C /* libPods-Jenkins.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-Jenkins.a"; path = "libPods-Jenkins.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		14CE82CB6CC3F15847D5C5CFD56DA36C /* libPods-Jenkins.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Jenkins.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E85A6F1F0FB9434F05C412E6D647B87 /* Pods-Jenkins.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Jenkins.debug.xcconfig"; sourceTree = "<group>"; };
 		6E87E22C5DF997F7870B8080B9930CD4 /* Pods-Jenkins-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Jenkins-acknowledgements.markdown"; sourceTree = "<group>"; };
 		797B91870187DAA0C5CA11642D145DBB /* Pods-Jenkins.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Jenkins.release.xcconfig"; sourceTree = "<group>"; };
 		79A19D7BCF02047C8FA2A191FA337635 /* Pods-Jenkins-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Jenkins-acknowledgements.plist"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A1A9513FB79705129B859FF51BA7481A /* Pods-Jenkins-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Jenkins-resources.sh"; sourceTree = "<group>"; };
 		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		CDA5DD7D1D317001CB9A1D22A474DF4A /* Pods-Jenkins-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Jenkins-dummy.m"; sourceTree = "<group>"; };
@@ -226,6 +226,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				MACH_O_TYPE = staticlib;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				ONLY_ACTIVE_ARCH = YES;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
