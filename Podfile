@@ -6,5 +6,5 @@ target 'Jenkins' do
   # use_frameworks!
 
   # Pods for Jenkins
-pod ‘AFNetworking’
+
 end
