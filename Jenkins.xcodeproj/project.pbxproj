@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C9D54744A023C21EC500F6D4 /* libPods-Jenkins.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BD91A82770F0CB57981DD44E /* libPods-Jenkins.a */; };
 		F763D4891E1A7A8800CB2573 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F763D4881E1A7A8800CB2573 /* main.m */; };
 		F763D48C1E1A7A8800CB2573 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F763D48B1E1A7A8800CB2573 /* AppDelegate.m */; };
 		F763D48F1E1A7A8800CB2573 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F763D48E1E1A7A8800CB2573 /* ViewController.m */; };
@@ -16,6 +17,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8CB2A98C26C28C8450561D60 /* Pods-Jenkins.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Jenkins.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Jenkins/Pods-Jenkins.debug.xcconfig"; sourceTree = "<group>"; };
+		BD91A82770F0CB57981DD44E /* libPods-Jenkins.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Jenkins.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5ABF713F804B2E635AF0BC7 /* Pods-Jenkins.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Jenkins.release.xcconfig"; path = "Pods/Target Support Files/Pods-Jenkins/Pods-Jenkins.release.xcconfig"; sourceTree = "<group>"; };
 		F763D4841E1A7A8800CB2573 /* Jenkins.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Jenkins.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F763D4881E1A7A8800CB2573 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F763D48A1E1A7A8800CB2573 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -33,17 +37,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C9D54744A023C21EC500F6D4 /* libPods-Jenkins.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6B4747FC667F15685EF6C7EA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8CB2A98C26C28C8450561D60 /* Pods-Jenkins.debug.xcconfig */,
+				D5ABF713F804B2E635AF0BC7 /* Pods-Jenkins.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		BB02905583072071E78E4A80 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BD91A82770F0CB57981DD44E /* libPods-Jenkins.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F763D47B1E1A7A8800CB2573 = {
 			isa = PBXGroup;
 			children = (
 				F763D4861E1A7A8800CB2573 /* Jenkins */,
 				F763D4851E1A7A8800CB2573 /* Products */,
+				6B4747FC667F15685EF6C7EA /* Pods */,
+				BB02905583072071E78E4A80 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -86,9 +110,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F763D49B1E1A7A8800CB2573 /* Build configuration list for PBXNativeTarget "Jenkins" */;
 			buildPhases = (
+				2B26682695DB1928A74FF5B0 /* [CP] Check Pods Manifest.lock */,
 				F763D4801E1A7A8800CB2573 /* Sources */,
 				F763D4811E1A7A8800CB2573 /* Frameworks */,
 				F763D4821E1A7A8800CB2573 /* Resources */,
+				8EBF963395817562F8FB284C /* [CP] Embed Pods Frameworks */,
+				64E17FFCF84BFE3E152C6431 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -145,6 +172,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2B26682695DB1928A74FF5B0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		64E17FFCF84BFE3E152C6431 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Jenkins/Pods-Jenkins-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8EBF963395817562F8FB284C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Jenkins/Pods-Jenkins-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F763D4801E1A7A8800CB2573 /* Sources */ = {
@@ -269,6 +344,7 @@
 		};
 		F763D49C1E1A7A8800CB2573 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8CB2A98C26C28C8450561D60 /* Pods-Jenkins.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer: JunHong Zhu (285AA3RCX7)";
@@ -285,6 +361,7 @@
 		};
 		F763D49D1E1A7A8800CB2573 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D5ABF713F804B2E635AF0BC7 /* Pods-Jenkins.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: JunHong Zhu (72GJ4BTB4F)";
